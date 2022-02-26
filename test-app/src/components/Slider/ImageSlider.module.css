@@ -1,0 +1,131 @@
+.cardContainer {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.cardContainer:active,
+.cardContainer:hover,
+.cardContainer:focus {
+  outline: none;
+  border: none;
+}
+
+.card {
+  width: 100%;
+  height: 450px;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.imageContainer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #000;
+  transition: 0.5s;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.image:hover {
+  opacity: 0.4;
+  transition: 0.4s;
+}
+
+.card:hover .imageContainer {
+  transform: translateY(-100px);
+  transition: all 0.9s;
+}
+
+.icons {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  display: flex;
+}
+
+.icons li {
+  list-style: none;
+}
+
+.icons a {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 50px;
+  text-align: center;
+  background: #fff;
+  font-size: 23px;
+  color: #333;
+  font-weight: bold;
+  margin: 0 6px;
+  transition: 0.4s;
+  transform: translateY(200px);
+  opacity: 0;
+}
+
+.card:hover .icons li a {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.iconsImg {
+  display: inline !important;
+}
+
+.iconsImg:hover {
+  transform: rotate(30deg);
+  transition: 0.4s;
+}
+
+.card:hover li:nth-child(1) > a {
+  transition-delay: 0.1s;
+}
+.card:hover li:nth-child(2) > a {
+  transition-delay: 0.2s;
+}
+
+.description {
+  position: absolute;
+  bottom: 400px;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: 120px;
+  z-index: 1;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+.description h2 {
+  margin: 20px 0;
+  padding: 0;
+  text-align: center;
+}
+
+.characteristics {
+  font-size: 16px;
+  line-height: 2;
+  color: #333;
+  font-weight: 300;
+  display: block;
+}
+
+.card:hover .description {
+  bottom: 0px;
+}

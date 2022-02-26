@@ -1,0 +1,47 @@
+.footer {
+  padding: 24px 0;
+  background: #fff;
+  margin-top: 5%;
+}
+
+.legalTextList {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.link {
+  position: relative;
+  line-height: 12px;
+  margin: auto;
+  transition: color 0.2s ease-out;
+  text-decoration: none;
+  color: #000;
+}
+
+.link:hover {
+  color: #f7b633;
+}
+
+.link:nth-child(odd):after {
+  content: "";
+  height: 12px;
+  width: 1px;
+  background: #666;
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.copyright {
+  margin-top: 12px;
+  padding: 0 30px;
+  font-size: 11px;
+  line-height: 18px;
+  text-align: center;
+}
