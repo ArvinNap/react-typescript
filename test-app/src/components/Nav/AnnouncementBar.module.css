@@ -2,6 +2,10 @@
   padding: 12px 0;
   background-color: #000;
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .announcementText {
@@ -11,17 +15,4 @@
   text-transform: uppercase;
   text-align: center;
   padding: 0 32px;
-}
-
-.announcementCountdown {
-  font-size: 12px;
-  line-height: 150%;
-  font-weight: 400;
-}
-
-.announcementBarContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
 }
